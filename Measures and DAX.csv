@@ -1,0 +1,9 @@
+measure_name,expression
+"Average electric range","AVERAGE('Electric Vehicle Population'[Electric_Range])"
+"CAFV Eligibility %","DIVIDE( CALCULATE(COUNTROWS('Electric Vehicle Population'), 'Electric Vehicle Population'[Clean_Alternative_Fuel_Vehicle_Eligibility] = ""Eligible""),
+    [Total vehicles]
+)"
+"Number of brands","DISTINCTCOUNT('Electric Vehicle Population'[Brand])"
+"number of models","DISTINCTCOUNT('Electric Vehicle Population'[Model])"
+"Total vehicles","COUNTROWS('Electric Vehicle Population')"
+"__Default measure","1"
